@@ -4,9 +4,13 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offer-service",
     "extraLinks": {
-      "pr": "https://jenkinstein.loyalty.com/job/offer-service/job/pr/",
-      "ci": "https://jenkinstein.loyalty.com/job/offer-service/job/ci/",
-      "cd": "https://jenkinstein.loyalty.com/job/offer-service/job/cd/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/offer-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-service/job/hf/",
+        "https://jenkinstein.loyalty.com/job/offer-service/job/pr/",
+        "https://jenkinstein.loyalty.com/job/offer-service/job/specific-ci/"
+      ]
     }
   },
   {
@@ -14,45 +18,82 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-offer-api",
     "extraLinks": {
-      "pr": "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/release/",
-      "CF": "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/cloudfront/",
-      "ci": "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/cd/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/api-gateway-external-offer-api/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/cloudfront/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/deployCloudfront/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/api-gateway-external-offer-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/api-gateway-external-offer-api/job/cloudfront/"
+      ]
     }
   },
   {
     "name": "offer-delivery-service",
     "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-service"
+    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-service",
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-delivery-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-service/job/hotfix-ci/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-service/job/hotfix-deploy/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-service/job/pr/"
+      ]
+    }
   },
   {
     "name": "api-gateway-external-offer-delivery-api",
     "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-offer-delivery-api"
+    "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-offer-delivery-api",
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-delivery-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-delivery-api/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-delivery-api/job/deployCloudFront/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-delivery-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-delivery-api/job/testScript/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/api-gateway-external-offer-delivery-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/api-gateway-external-offer-delivery-api/job/deployCloudFront/"
+      ]
+    }
   },
   {
     "name": "offer-category-service",
     "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc/offer-category-service"
+    "link": "https://github.com/AirMilesLoyaltyInc/offer-category-service",
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-category-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/offer-category-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-category-service/job/pr/"
+      ]
+    }
   },
   {
     "name": "content-generation-service",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/content-generation-service",
     "extraLinks": {
-      "pr": "https://jenkinstein.loyalty.com/job/content-generation-service/",
-      "ci": "https://jenkinstein.loyalty.com/job/Deployment/job/content-generation-service/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/content-generation-service-prod/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/content-generation-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/content-generation-service/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/content-generation-service/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/content-generation-service-prod/"
+      ]
     }
   },
   {
     "name": "offer-management-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offer-management-api",
-    "extraLinks":{
-      "pr": "https://jenkinstein.loyalty.com/job/offer-management-api/",
-      "ci": "https://jenkinstein.loyalty.com/job/Deployment/job/offer-management-api/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-management-api-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-management-api/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-management-api/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-management-api/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-management-api-prod/"
+      ]
     }
   },
   {
@@ -60,7 +101,16 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-state-dispatcher",
     "extraLinks": {
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-dispatcher/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/bzhang-testSonar/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-dispatcher/"
+      ]
     }
   },
   {
@@ -68,34 +118,64 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-state-reader",
     "extraLinks": {
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-reader/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-reader/"
+      ]
     }
   },
   {
     "name": "offer-delivery-assignment-producer",
     "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-assignment-producer"
+    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-assignment-producer",
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-producer/job/cd/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-producer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-producer/job/pr/"
+      ]
+    }
   },
   {
     "name": "offer-delivery-assignment-consumer",
     "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-assignment-consumer"
+    "link": "https://github.com/AirMilesLoyaltyInc/offer-delivery-assignment-consumer",
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-consumer/job/cd/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-consumer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-delivery-assignment-consumer/job/pr/"
+      ]
+    }
   },
   {
     "name": "nova-common-events",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-common-events",
     "extraLinks": {
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events/",
-      "cd2": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events-amrpint/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events-amrpint/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events-amrpint/"
+      ]
     }
   },
   {
     "name": "nova-lambda-warmer",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-lambda-warmer",
-    "extraLinks":{
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-lambda-warmer/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-lambda-warmer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-lambda-warmer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-lambda-warmer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-lambda-warmer/"
+      ]
     }
   },
   {
@@ -103,24 +183,41 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offer-submission-web",
     "extraLinks": {
-      "ci": "https://jenkinstein.loyalty.com/job/Deployment/job/offer-submission-web/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-submission-web-prod/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-submission-web/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-submission-web/job/ci_hotfix/",
+        "https://jenkinstein.loyalty.com/job/offer-submission-web/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-submission-web/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-submission-web-prod/"
+      ]
     }
   },
   {
     "name": "nova-offer-resolver",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-resolver",
-    "extraLinks":{
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-resolver-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-resolver/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-resolver-prod/"
+      ]
     }
   },
   {
     "name": "geolocation-api-v2",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/geolocation-api-v2",
-    "extraLinks":{
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-geolocation-api-v2/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/ci/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/pr/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/test/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2-jmeter-test/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/geolocation-api-v2/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/geolocation-api-v2-prod/"
+      ]
     }
   },
   {
@@ -128,101 +225,143 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/promotion-service",
     "extraLinks": {
-      "ci": "https://jenkinstein.loyalty.com/job/promotion-service/job/ci/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment/job/promotion-service/",
-      "config-nonprod": "https://jenkinstein.loyalty.com/job/Deployment/job/promotions-service-json-configs/",
-      "config-prod": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/promotions-service-json-configs-prod/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/promotion-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/promotion-service/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/promotion-service/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/promotions-service-json-configs/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/promotion-service-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/promotions-service-json-configs-prod/"
+      ]
     }
   },
   {
     "name": "nova-acc-offer-consumer",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-acc-offer-consumer",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-acc-offer-consumer/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-acc-offer-consumer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-acc-offer-consumer/"
+      ]
     }
   },
   {
     "name": "offer-facets",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offer-facets",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-facets-prod/",
-      "cdConfig": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-facets-configs-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-facets/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-facets/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-facets/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-facets-configs/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-facets-configs-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-facets-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-facets-configs-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-facets-prod/"
+      ]
     }
   },
   {
     "name": "offer-submission-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offer-submission-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-submissions-api-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/offer-submission-api/job/Database/",
+        "https://jenkinstein.loyalty.com/job/offer-submission-api/job/ci/",
+        "https://jenkinstein.loyalty.com/job/offer-submission-api/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/offer-submission-api/",
+        "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/offer-submissions-api-prod/"
+      ]
     }
   },
   {
     "name": "nova-offer-state-writer",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-state-writer",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-writer/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-writer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-writer/"
+      ]
     }
   },
   {
     "name": "token-file-splitter",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/token-file-splitter",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/token-file-splitter/job/cd/",
+        "https://jenkinstein.loyalty.com/job/token-file-splitter/job/ci/",
+        "https://jenkinstein.loyalty.com/job/token-file-splitter/job/pr/"
+      ]
     }
   },
   {
     "name": "token-file-merger",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/token-file-merger",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/token-file-merger/job/cd/",
+        "https://jenkinstein.loyalty.com/job/token-file-merger/job/ci/",
+        "https://jenkinstein.loyalty.com/job/token-file-merger/job/pr/"
+      ]
     }
   },
   {
     "name": "api-gateway-secure-string-authorizer",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-secure-string-authorizer",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-secure-string-authorizer/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-secure-string-authorizer/job/ci/"
+      ]
     }
   },
   {
     "name": "nova-event-bus",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-event-bus",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-event-bus/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/"
+      ]
     }
   },
   {
     "name": "nova-common",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-common",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-common/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-common-test/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common-test/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events-amrpint/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events-amrpint/"
+      ]
     }
   },
   {
@@ -230,209 +369,394 @@
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/post-security-manager",
     "extraLinks": {
-      "pr": "https://jenkinstein.loyalty.com/job/post-security-manager/",
-      "ci": "https://jenkinstein.loyalty.com/job/Deployment/job/post-security-manager/",
-      "cd": "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/post-security-manager-prod/"
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/post-security-manager/job/ci/",
+        "https://jenkinstein.loyalty.com/job/post-security-manager/job/database/",
+        "https://jenkinstein.loyalty.com/job/post-security-manager/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/post-security-manager/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/post-security-manager-prod/"
+      ]
     }
   },
   {
     "name": "post-api-gateway",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/post-api-gateway",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/post-api-gateway-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/post-api-gateway/job/ci/",
+        "https://jenkinstein.loyalty.com/job/post-api-gateway/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/post-api-gateway/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/post-api-gateway-prod/"
+      ]
     }
   },
   {
     "name": "post-image-service",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/post-image-service",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/post-image-service-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/post-image-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/post-image-service/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/post-image-service/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/post-image-service-migration/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/post-image-service-migration/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/post-image-service-prod/"
+      ]
     }
   },
   {
     "name": "token-generation-service",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/token-generation-service",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/token-generation-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/token-generation-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/token-generation-service/job/pr/"
+      ]
     }
   },
   {
     "name": "token-file-processor",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/token-file-processor",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/token-file-processor/job/cd/",
+        "https://jenkinstein.loyalty.com/job/token-file-processor/job/ci/",
+        "https://jenkinstein.loyalty.com/job/token-file-processor/job/pr/"
+      ]
     }
   },
   {
     "name": "api-gateway-external-category-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-category-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-category-api/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-category-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-category-api/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-category-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-category-api/"
+      ]
     }
   },
   {
     "name": "api-gateway-external-geolocation-api-v2",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-geolocation-api-v2",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-geolocation-api-v2/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-geolocation-api-v2/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-geolocation-api-v2/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-geolocation-api-v2/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-geolocation-api-v2/job/cd/"
+      ]
     }
   },
   {
     "name": "api-gateway-external-offer-resolver-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-offer-resolver-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-offer-resolver-api/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-resolver-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-resolver-api/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-resolver-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-offer-resolver-api/job/cd/"
+      ]
     }
   },
   {
     "name": "api-gateway-external-offer-state-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-offer-state-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-offer-state-api/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-state-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-state-api/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-state-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-state-api-temp/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-offer-state-api-temp/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-offer-state-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-offer-state-api/job/deployALB/"
+      ]
     }
   },
   {
     "name": "api-gateway-external-promotion-service-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/api-gateway-external-promotion-service-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-promotion-service-api/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-promotion-service-api/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-promotion-service-api/job/deployALB/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-promotion-service-api/job/release/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/api-gateway-external-promotion-service-api/job/cd/"
+      ]
     }
   },
   {
     "name": "offers-external-api-gateway",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/offers-external-api-gateway",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": "https://jenkinstein.loyalty.com/view/Deployment/job/Deployment-Prod/job/POST_Prod_Resources/job/external-api-gateway-prod/"
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/external-api-gateway/job/cd-br-load/",
+        "https://jenkinstein.loyalty.com/job/external-api-gateway/job/ci/",
+        "https://jenkinstein.loyalty.com/job/external-api-gateway/job/pr/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-api-gateway-external-partner-engagement/job/cd/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-api-gateway-external-partner-engagement/job/ci/",
+        "https://jenkinstein.loyalty.com/job/api-gateway-external-api-gateway-external-partner-engagement/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/external-api-gateway/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/external-api-gateway-resources/job/Gateway%20WAF/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/external-api-gateway-resources/job/s3-buckets-setup/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/external-api-gateway-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/external-api-gateway-waf/"
+      ]
     }
   },
   {
     "name": "nova-offer-event-publisher",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-event-publisher",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/bzhang-testSonar/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-resolver/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-writer/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-event-bus/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-resolver-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-writer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-reader/"
+      ]
     }
   },
   {
     "name": "nova-perf-runner",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-perf-runner",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-acc-offer-consumer/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/nova-fargate-poc/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-fargate-poc/job/cicd/",
+        "https://jenkinstein.loyalty.com/job/nova-fargate-poc/job/final/",
+        "https://jenkinstein.loyalty.com/job/nova-fargate-poc/job/test/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/bzhang-testSonar/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-acc-offer-consumer/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-resolver/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-writer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-acc-offer-consumer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-resolver-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-writer/"
+      ]
     }
   },
   {
     "name": "nova-dynamo-migrator",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-dynamo-migrator",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/segment-data-migration/job/deploy-ec2-instance/",
+        "https://jenkinstein.loyalty.com/job/segment-data-migration/job/deploy-s3-bucket/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/segment-data-migration/job/deploy-ec2-instance/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/segment-data-migration/job/deploy-s3-bucket/"
+      ]
     }
   },
   {
     "name": "nova-offer-state",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-offer-state",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/bzhang-testSonar/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-dispatcher/job/scheduled-cd/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-reader/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-state-writer/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-state-writer/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-dispatcher/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-reader/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-state-writer/"
+      ]
     }
   },
   {
     "name": "nova-template",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-template",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-template/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-template/job/pr/"
+      ]
     }
   },
   {
     "name": "geolocation-api",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/geolocation-api",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/ci/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/pr/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2/job/test/",
+        "https://jenkinstein.loyalty.com/job/geolocation-api-v2-jmeter-test/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/geolocation-api-resources/job/geolocation-api-elasticsearch/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/geolocation-api-resources/job/geolocation-api-lambdas/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/geolocation-api-resources/job/geolocation-lambda-s3-cross-account-bucket-policy/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/geolocation-api-v2/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/geolocation-api-resources/job/geolocation-api-elasticsearch/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/geolocation-api-resources/job/geolocation-api-lambdas/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/geolocation-api-resources/job/geolocation-lambda-s3-cross-account-bucket-policy/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/geolocation-api-resources/job/geolocation-api-elasticsearch/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/geolocation-api-resources/job/geolocation-api-lambdas/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/geolocation-api-resources/job/geolocation-lambda-s3-cross-account-bucket-policy/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/geolocation-api-v2-prod/"
+      ]
     }
   },
   {
     "name": "nova-githooks",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-githooks",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/ci/"
+      ]
     }
   },
   {
     "name": "nova-event-producer",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-event-producer",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-event-bus/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/"
+      ]
     }
   },
   {
     "name": "nova-test-client",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-test-client",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-event-bus/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-template/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-template/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-jenkins-test/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/perf/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/roy-test-repo/job/cd/",
+        "https://jenkinstein.loyalty.com/job/roy-test-repo/job/ci/",
+        "https://jenkinstein.loyalty.com/job/roy-test-repo/job/pr/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-event-bus/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-regional-offers/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-event-bus-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-regional-offers-prod/"
+      ]
     }
   },
   {
     "name": "nova-core-models",
     "type": "github",
     "link": "https://github.com/AirMilesLoyaltyInc/nova-core-models",
-    "extraLinks":{
-      "pr": "",
-      "ci": "",
-      "cd": ""
+    "extraLinks": {
+      "jenkins": [
+        "https://jenkinstein.loyalty.com/job/nova-common/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common-events/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-common-test/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-common-test/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/perf/",
+        "https://jenkinstein.loyalty.com/job/nova-regional-offers/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-offer-resolver/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-template/job/ci/",
+        "https://jenkinstein.loyalty.com/job/nova-template/job/pr/",
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/cd/",
+        "https://jenkinstein.loyalty.com/job/nova-token-service/job/ci/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/cd/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-event-toBeDeletedJob/job/hotfix/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-common-events-amrpint/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-regional-offers/",
+        "https://jenkinstein.loyalty.com/job/Deployment/job/nova-offer-resolver/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-common-events-amrpint/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-regional-offers-prod/",
+        "https://jenkinstein.loyalty.com/job/Deployment-Prod/job/POST_Prod_Resources/job/nova-offer-resolver-prod/"
+      ]
+    }
+  },
+  {
+    "name": "Airmiles Github",
+    "type": "github",
+    "link": "https://github.com/AirMilesLoyaltyInc",
+    "extraLinks": {
+      "jenkins": []
     }
   },
   {

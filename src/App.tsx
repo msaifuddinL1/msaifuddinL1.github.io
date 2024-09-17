@@ -1,15 +1,27 @@
 import { useEffect, useRef, useState } from "react";
 import data from "./assets/links.json";
 import Fuse from "fuse.js";
-import { Equal, MoveLeft, MoveRight, RefreshCw, Save, XCircle } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronRight,
+  ChevronRightCircle,
+  Equal,
+  MoveLeft,
+  MoveRight,
+  RefreshCw,
+  Save,
+  XCircle,
+} from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import {v4 as uuidv4} from 'uuid';
+import EpochTime from "./components/EpochTime";
+import IdGenerator from "./components/IdGenerator";
+import ButtonLinkLabel from "./components/ButtonLinkLabel";
 
 interface ItemCard {
   name: string;
   type: string;
   link: string;
-  extraLinks?: Record<string, string>;
+  extraLinks?: Record<string, string[]>;
 }
 
 const colorMap: Record<string, string> = {
@@ -25,11 +37,16 @@ const jiraBaseLink = "https://amrp.atlassian.net/browse";
 function App() {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [search, setSearch] = useState("");
-  const [uuid,setUuid] = useState(uuidv4())
-  const [epochTime, setEpochTime] = useState<string>()
-  const [time, setTime] = useState<Date | null>(null)
+
+  const [bottomBar, toggleBottomBar] = useState<Boolean>(false);
+  type BottomBarContent = {
+    title: string;
+    content: string[];
+  };
+  const [bottomBarContent, setBottomBarContent] = useState<BottomBarContent>();
   let linkData: ItemCard[] = data as ItemCard[];
-  const itemStyle = " rounded-xl p-5 hover:scale-105 flex flex-col h-min";
+  const itemStyle =
+    " rounded-xl p-5 hover:scale-105 flex flex-col h-min space-y-2";
 
   const fuse = new Fuse(linkData, {
     keys: ["name"],
@@ -78,71 +95,63 @@ function App() {
     return type in colorMap ? colorMap[type] : colorMap.default;
   };
 
-  function ButtonLinkLabel({ link, label }: { link: string; label: string }) {
-    return (
-      <a
-        className="text-center hover:font-extrabold"
-        target="_blank"
-        href={link}
-      >
-        {label}
-      </a>
-    );
-  }
-
   function ItemCard({ value, index }: { value: ItemCard; index: any }) {
-    return (
-      <div
-        key={index}
-        className={twMerge(itemStyle, pickColorBasedOnType(value.type))}
-      >
-        <ButtonLinkLabel link={value.link} label={value.name} />
-        <div className="flex w-full justify-evenly space-x-4">
-          {value.extraLinks &&
-            Object.keys(value.extraLinks).map((label, index) => {
-              if (value.extraLinks && value.extraLinks[label]) {
-                return (
-                  <ButtonLinkLabel
-                    link={value.extraLinks[label]}
-                    label={label}
-                    key={index}
-                  />
-                );
-              }
-            })}
-        </div>
-      </div>
-    );
-  }
+    const jenkinsButton = () => {
+      const handleButton = () => {
+        setBottomBarContent({
+          title: value.name,
+          content: value.extraLinks?.jenkins,
+        });
+        toggleBottomBar(true);
+      };
+      return (
+        <>
+          <button
+            className="flex w-full items-center space-x-2"
+            onClick={handleButton}
+          >
+            <p className="underline">Jenkins Links</p>
+          </button>
+        </>
+      );
+    };
 
-  function Utility() {
     return (
       <>
-      <h2 className="text-2xl underline underline-offset-4">Utilities</h2>
-      <div className="flex space-x-5 items-center">
-        <h1>{uuid}</h1>
-        <button onClick={() => setUuid(uuidv4())}>
-          <RefreshCw size={30} />
-        </button>
+        <div
+          key={index}
+          className={twMerge(itemStyle, pickColorBasedOnType(value.type))}
+        >
+          <ButtonLinkLabel link={value.link} label={value.name} />
+          {value.extraLinks && value.extraLinks.jenkins && jenkinsButton()}
+        </div>
+      </>
+    );
+  }
+
+  function BottomDrawer(props: {
+    content: string[] | undefined;
+    title: string;
+  }) {
+    const data = props.content?.map((item, index) => (
+      <li key={index}>
+        <ButtonLinkLabel link={item} label={item} />
+      </li>
+    ));
+
+    return (
+      <div
+        className={`sticky bottom-0 w-full rounded-t-lg bg-slate-400 p-5 text-black shadow-xl shadow-slate-300 ${bottomBar ? "block" : "hidden"}`}
+      >
+        <div className="flex justify-between">
+          <p>{props.title}</p>
+          <button onClick={() => toggleBottomBar((prev) => !prev)}>
+            <XCircle size={20} />
+          </button>
+        </div>
+        <ul className="m-auto list-outside list-disc px-5">{data}</ul>
       </div>
-      <h1>Current EPOCH time: {Date.now()}</h1>
-      <div className="flex space-x-5 items-center">
-      <input type="text" className="h-20 rounded-xl bg-stone-600 p-5 w-52" placeholder="Epoch Time" value={epochTime} onChange={(e) => setEpochTime(e.target.value)} />
-      <div className="flex flex-col space-y-2">
-        <button onClick={() => {
-          const converTime = new Date(Number(epochTime))
-          setTime(converTime)
-        }}>
-          <MoveRight size={30} />
-        </button>
-        {/* <button>
-          <MoveLeft size={30} />
-        </button> */}
-      </div>
-      <h1>{time?.toLocaleString()}</h1>
-      {/* <input type="text" className="h-20 rounded-xl bg-stone-600 p-5 w-52" placeholder="EST Time" value={time} onChange={(e)=> setTime(e.target.value)}/> */}
-      </div></>
-    )
+    );
   }
 
   return (
@@ -167,8 +176,10 @@ function App() {
         ))}
       </div>
 
-      <Utility />
-      
+      <h2 className="text-2xl underline underline-offset-4">Utilities</h2>
+      <IdGenerator />
+      <EpochTime />
+
       <h2 className="text-2xl underline underline-offset-4">All</h2>
       <div className="flex flex-wrap items-center gap-5">
         {linkData.map((value, index) => (
@@ -176,7 +187,11 @@ function App() {
         ))}
       </div>
 
-      
+      <BottomDrawer
+        title={bottomBarContent?.title!}
+        content={bottomBarContent?.content!}
+      />
+
       
     </div>
   );
