@@ -1,8 +1,8 @@
-FROM node:18
+FROM node:18-alpine
 WORKDIR /app
-COPY package*.json ./
-RUN npm config set registry https://registry.npmjs.org/
+
+COPY . /app/
 RUN npm install
-COPY . .
 EXPOSE 4200
+
 CMD [ "npm", "run", "dev" ]

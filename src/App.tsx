@@ -1,15 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import data from "./assets/links.json";
+import data from "./data/links.json";
 import Fuse from "fuse.js";
 import {
-  ChevronDown,
-  ChevronRight,
-  ChevronRightCircle,
-  Equal,
-  MoveLeft,
-  MoveRight,
-  RefreshCw,
-  Save,
   XCircle,
 } from "lucide-react";
 import { twMerge } from "tailwind-merge";
@@ -100,7 +92,7 @@ function App() {
       const handleButton = () => {
         setBottomBarContent({
           title: value.name,
-          content: value.extraLinks?.jenkins,
+          content: value.extraLinks?.jenkins!,
         });
         toggleBottomBar(true);
       };
