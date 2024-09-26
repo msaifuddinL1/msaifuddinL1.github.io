@@ -770,6 +770,26 @@
     "link": "https://amrp.atlassian.net/projects/OFD?selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page"
   },
   {
+    "name": "DEV - Post UI",
+    "type": "",
+    "link": "https://dev-postui.toolbox.loyalty.com/offer-submission/my-partners"
+  },
+  {
+    "name": "INT - Post UI",
+    "type": "",
+    "link": "https://int-postui.toolbox.loyalty.com/offer-submission/my-partners"
+  },
+  {
+    "name": "UAT - Post UI",
+    "type": "",
+    "link": "https://uat-postui.toolbox.loyalty.com/offer-submission/my-partners"
+  },
+  {
+    "name": "PROD - Post UI",
+    "type": "",
+    "link": "https://postui.toolbox.loyalty.com/offer-submission/my-partners"
+  },
+  {
     "name": "Assignment Producer - Statistics",
     "type": "splunk",
     "link": "https://airmiles.splunkcloud.com/en-GB/app/search/search?s=%2FservicesNS%2Fnobody%2Fsearch%2Fsaved%2Fsearches%2FOffer%2520Delivery%2520Assignment%2528PROD%2529%2520-%2520Info%2520of%2520the%2520uploaded%2520file&display.page.search.mode=verbose&dispatch.sample_ratio=1&workload_pool=&q=search%20index%3D%22amrpint-prod%22%20logGroup%3D%22*-offer-delivery-assignment-producer-lambda%22%20%22Finished%20reading%20all%20data%20from%20file%22%20%7C%20mvexpand%20messageEvent.data%20%0A%7C%20table%20messageEvent.data.bucketName%2C%20messageEvent.data.fileName%2C%20messageEvent.data.skippedLines%2C%20messageEvent.data.status%2C%20messageEvent.data.totalLines&earliest=-7d%40h&latest=now&sid=1718043235.14027735"
@@ -778,11 +798,6 @@
     "name": "Assignment Consumer - Statistics",
     "type": "splunk",
     "link": "https://airmiles.splunkcloud.com/en-GB/app/search/search?s=%2FservicesNS%2Fnobody%2Fsearch%2Fsaved%2Fsearches%2FOffer%2520Delivery%2520Assignment%2528PROD%2529%2520-%2520Total%2520and%2520Skipped%2520Rows%2520for%2520FileName&sid=1718049159.14048312&display.page.search.mode=verbose&dispatch.sample_ratio=1&workload_pool=&q=search%20index%3D%22amrpint-prod%22%20logGroup%3D%22*-offer-delivery-assignment-consumer-lambda%22%20%22messageEvent.message%22%3D%22Finished%20insertion%20of%20data%20into%20database%22%20%7C%20stats%20sum(messageEvent.data.totalLines)%20as%20totalLines%2Csum(messageEvent.data.skippedLines)%20as%20skippedLines%20by%20messageEvent.data.fileName&earliest=-15m&latest=now"
-  },
-  {
-    "name": "Airmiles Github",
-    "type": "github",
-    "link": "https://github.com/AirMilesLoyaltyInc"
   },
   {
     "name": "Airmiles Splunk",
